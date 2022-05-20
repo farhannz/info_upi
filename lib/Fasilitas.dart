@@ -73,7 +73,7 @@ class Fasilitas extends StatelessWidget {
                       ),
                       child: Container(
                         child: Text(
-                          "Fakultas Pendidikan Ilmu Pengetahuan Sosial",
+                          "Masjid Al-Furqon terletak dekat gate depan dari Universitas Pendidikan Indonesia",
                           textAlign: TextAlign.center,
                         ),
                       ),
@@ -82,9 +82,9 @@ class Fasilitas extends StatelessWidget {
                 ),
               ),
               Container(
-                child: Image.network(
-                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
-                  width: .15 * screenWidth,
+                child: Image.asset(
+                  'masjid.jpg',
+                  width: .35 * screenWidth,
                 ),
               )
             ],
