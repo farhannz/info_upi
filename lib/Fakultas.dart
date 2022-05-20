@@ -59,9 +59,45 @@ class Fakultas extends StatelessWidget {
             },
           ),
           Container(
-              decoration: BoxDecoration(border: Border.all()),
-              padding: EdgeInsets.all(14),
-              child: Text("baris kedua")),
+            decoration: BoxDecoration(border: Border.all()),
+            padding: EdgeInsets.all(14),
+            child: Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              spacing: 15,
+              children: [
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        "FPIPS",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: .5 * screenWidth,
+                        ),
+                        child: Container(
+                          child: Text(
+                            "Fakultas Pendidikan Ilmu Pengetahuan Sosial",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  child: Image.network(
+                    'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                    width: .15 * screenWidth,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
