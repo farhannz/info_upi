@@ -46,8 +46,8 @@ class Fakultas extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    child: Image.network(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                    child: Image.asset(
+                      'fpmipa.png',
                       width: .15 * screenWidth,
                     ),
                   )
@@ -97,8 +97,8 @@ class Fakultas extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  child: Image.network(
-                    'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                  child: Image.asset(
+                    'fpips.png',
                     width: .15 * screenWidth,
                   ),
                 )

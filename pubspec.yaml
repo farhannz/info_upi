@@ -65,6 +65,8 @@ flutter:
     - assets/stadion.jpg
     - assets/fpmipa.jpg
     - assets/masjid.jpg
+    - assets/fpips.png
+    - assets/fpmipa.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
