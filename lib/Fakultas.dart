@@ -19,11 +19,11 @@ class Fakultas extends StatelessWidget {
               padding: EdgeInsets.all(14),
               child: Wrap(
                 alignment: WrapAlignment.spaceEvenly,
-                spacing: 15,
+                spacing: .005 * screenWidth,
                 children: [
                   Container(
                     child: Column(
-                      children: <Widget>[
+                      children: [
                         Text(
                           "FPMIPA",
                           style: TextStyle(
@@ -55,6 +55,13 @@ class Fakultas extends StatelessWidget {
               ),
             ),
             onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return RincianFakultas();
+                  },
+                ),
+              );
               //gunakan navigator untuk panggil RincianFakultas
             },
           ),
@@ -63,11 +70,11 @@ class Fakultas extends StatelessWidget {
             padding: EdgeInsets.all(14),
             child: Wrap(
               alignment: WrapAlignment.spaceEvenly,
-              spacing: 15,
+              spacing: .005 * screenWidth,
               children: [
                 Container(
                   child: Column(
-                    children: <Widget>[
+                    children: [
                       Text(
                         "FPIPS",
                         style: TextStyle(
